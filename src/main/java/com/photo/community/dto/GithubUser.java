@@ -12,10 +12,20 @@ package com.photo.community.dto;
  *  *    
  *  
  */
+
 public class GithubUser {
     private String name;
     private Long id;
     private String bio;
+    private String avatar_url;
+
+    public String getAvatar_url() {
+        return avatar_url;
+    }
+
+    public void setAvatar_url(String avatar_url) {
+        this.avatar_url = avatar_url;
+    }
 
     public String getName() {
         return name;
@@ -25,11 +35,11 @@ public class GithubUser {
         this.name = name;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
